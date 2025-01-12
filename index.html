@@ -3,46 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awesome Web Page</title>
+    <title>European Football Teams and Players</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             margin: 0;
-            padding: 0;
+            padding: 20px;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            height: 100vh;
         }
-        .container {
-            text-align: center;
+        .team {
             background-color: #fff;
             padding: 20px;
+            margin: 10px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
         }
         h1 {
             color: #333;
         }
-        p {
-            color: #666;
-        }
-        a {
+        h2 {
             color: #1e90ff;
-            text-decoration: none;
         }
-        a:hover {
-            text-decoration: underline;
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            color: #666;
+            padding: 5px 0;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to My Awesome Web Page</h1>
-        <p>This is a simple and clean web page created using HTML and CSS.</p>
-        <p>Feel free to explore and customize the content as you like.</p>
-        <a href="https://github.com" target="_blank">Visit my GitHub</a>
+    <h1>European Football Teams and Players</h1>
+    <div class="team">
+        <h2>FC Barcelona</h2>
+        <ul>
+            <li>Lionel Messi</li>
+            <li>Gerard Piqué</li>
+            <li>Sergio Busquets</li>
+            <li>Frenkie de Jong</li>
+        </ul>
+    </div>
+    <div class="team">
+        <h2>Real Madrid</h2>
+        <ul>
+            <li>Cristiano Ronaldo</li>
+            <li>Sergio Ramos</li>
+            <li>Luka Modrić</li>
+            <li>Toni Kroos</li>
+        </ul>
+    </div>
+    <div class="team">
+        <h2>Manchester United</h2>
+        <ul>
+            <li>Bruno Fernandes</li>
+            <li>Marcus Rashford</li>
+            <li>Paul Pogba</li>
+            <li>Harry Maguire</li>
+        </ul>
+    </div>
+    <div class="team">
+        <h2>Paris Saint-Germain</h2>
+        <ul>
+            <li>Neymar Jr</li>
+            <li>Kylian Mbappe</li>
+            <li>Angel Di Maria</li>
+            <li>Marco Verratti</li>
+        </ul>
     </div>
 </body>
 </html>
