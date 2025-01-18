@@ -64,7 +64,6 @@
             margin-bottom: 20px;
             display: flex;
             align-items: center;
-            font-size: 1.5rem;
         }
         h2 i {
             margin-left: 10px;
@@ -97,6 +96,50 @@
         .skills li:hover, .interests li:hover {
             background-color: #b2ebf2;
             transform: translateY(-5px);
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .form-container {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-container label {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .form-container input, .form-container textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .form-container button:hover {
+            background-color: #45a049;
         }
         a {
             color: #4CAF50;
@@ -131,11 +174,14 @@
         <a href="#projects"><i class="fas fa-briefcase"></i> کارها و پروژه‌ها</a>
         <a href="#skills"><i class="fas fa-tools"></i> مهارت‌ها</a>
         <a href="#interests"><i class="fas fa-heart"></i> علاقه‌مندی‌ها</a>
+        <a href="#gallery"><i class="fas fa-images"></i> گالری تصاویر</a>
+        <a href="#contact"><i class="fas fa-envelope"></i> تماس</a>
     </nav>
     <section>
         <div class="container">
             <div class="profile-img">
-                <img src="https://i.imgur.com/Ep31Tl5.jpeg" alt="Profile Picture"></div>
+                <img src="https://i.imgur.com/Ep31Tl5.jpeg" alt="Profile Picture">
+            </div>
             <h2 id="education"><i class="fas fa-graduation-cap"></i> تحصیلات</h2>
             <p>دیپلم رشته ریاضی</p>
             <p>دانشجوی مقطع کارشناسی دانشگاه اصفهان</p>
@@ -158,10 +204,18 @@
                 <li>شعر و ادبیات</li>
                 <li>گیمینگ</li>
             </ul>
-        </div>
-    </section>
-    <footer>
-        <p>&copy; 2025 سید محمد پویا رضوی. تمامی حقوق محفوظ است.</p>
-    </footer>
-</body>
-</html>
+
+            <h2 id="gallery"><i class="fas fa-images"></i> گالری تصاویر</h2>
+            <div class="gallery">
+                <img src="https://via.placeholder.com/100" alt="Gallery Image 1">
+                <img src="https://via.placeholder.com/100" alt="Gallery Image 2">
+                <img src="https://via.placeholder.com/100" alt="Gallery Image 3">
+                <img src="https://via.placeholder.com/100" alt="Gallery Image 4">
+                <img src="https://via.placeholder.com/100" alt="Gallery Image 5">
+                <img src="https://via.placeholder.com/100" alt="Gallery Image 6">
+            </div>
+
+            <h2 id="contact"><i class="fas fa-envelope"></i> تماس</h2>
+            <div class="form-container">
+                <form>
+                   [43dcd9a7-70db-4a1f-b0ae-981daa162054](https://github.com/LucaRiccio/laravel-primi-passi/tree/fb91862950a6e5bc5fb011d4a5084dbeb32dfecd/resources/views/layout/app.blade.php?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "1")[43dcd9a7-70db-4a1f-b0ae-981daa162054](https://github.com/y0cxan/y0cxan/tree/db42238938dae5048995e4f1dd18b286f5d28236/index.php?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "2")[43dcd9a7-70db-4a1f-b0ae-981daa162054](https://github.com/biboibob/BudgetAppMCP/tree/3bb17239e273dba1f6852df8c93ea6e5e452bb07/Income.php?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "3")[43dcd9a7-70db-4a1f-b0ae-981daa162054](https://github.com/tuanpham-aptech/sportequiptment/tree/dcf985d550a20e54ad6be00927c463c5fc75a020/.history/admin/includes/header_20211029103137.php?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "4")[43dcd9a7-70db-4a1f-b0ae-981daa162054](https://github.com/durgeshdks12345/mywebsite/tree/1ac71393f2f9fe030e198f98a9439d56918a83ac/README.md?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "5")
