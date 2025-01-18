@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>وب سایت شخصی</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333;
         }
         header {
-            background-color: #333;
+            background-color: #4CAF50;
             color: white;
             padding: 20px;
             text-align: center;
@@ -21,58 +23,71 @@
             padding: 20px;
         }
         .container {
-            max-width: 800px;
-            margin: 0 auto;
+            max-width: 900px;
+            margin: 20px auto;
             background-color: white;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
         h2 {
-            border-bottom: 2px solid #333;
+            border-bottom: 2px solid #4CAF50;
             padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .profile-img {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .profile-img img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
         .skills, .interests {
             list-style-type: none;
             padding: 0;
         }
         .skills li, .interests li {
-            background-color: #f4f4f4;
+            background-color: #e0f7fa;
             margin: 5px 0;
             padding: 10px;
-            border: 1px solid #ddd;
+            border: 1px solid #4CAF50;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>سید مخمد پویا رضوی</h1>
+        <h1>سید محمد پویا رضوی</h1>
     </header>
     <section>
         <div class="container">
             <div class="profile-img">
                 <img src="https://i.imgur.com/Ep31Tl5.jpeg" alt="Profile Picture">
-                        </div>
+            </div>
             <h2>تحصیلات</h2>
-            <p>دیپلم رشته ریاضی </p>
-                        <p>دانشجوی مقطع کارشناسی دانشگاه اصفهان </p>
-                        <p>رشته مهندسی کامپیوتر  </p>
+            <p>دیپلم رشته ریاضی</p>
+            <p>دانشجوی مقطع کارشناسی دانشگاه اصفهان</p>
+            <p>رشته مهندسی کامپیوتر</p>
+
             <h2>کارها و پروژه‌ها</h2>
-            <p>اینجا توضیحات مربوط به کارها و پروژه‌های خود را وارد کنید...</p>
+            <p>در حال حاضر پروژه‌ای موجود نیست.</p>
 
             <h2>مهارت‌ها</h2>
             <ul class="skills">
                 <li>کاریکاتور</li>
                 <li>سابقه طولانی در عرصه گیمینگ</li>
-                <li>آشنایی با زبان های برنامه نویسی سی پلاس پلاس و پایتون</li>
-                <li>آشنایی با مجموعه آفیس <li>
+                <li>آشنایی با زبان‌های برنامه‌نویسی سی پلاس پلاس و پایتون</li>
+                <li>آشنایی با مجموعه آفیس</li>
             </ul>
 
             <h2>علاقه‌مندی‌ها</h2>
             <ul class="interests">
-                <li> تحلیل فوتبال ایران و جهان</li>
+                <li>تحلیل فوتبال ایران و جهان</li>
                 <li>شعر و ادبیات</li>
                 <li>گیمینگ</li>
-              
             </ul>
         </div>
     </section>
