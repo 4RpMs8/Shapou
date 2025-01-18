@@ -1,136 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>European Football Teams and Players</title>
+    <title>وب سایت شخصی</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
         }
-        .header {
-            background-color: #1e90ff;
+        header {
+            background-color: #333;
             color: white;
             padding: 20px;
             text-align: center;
         }
-        .team {
-            background-color: #fff;
+        section {
             padding: 20px;
-            margin: 20px;
-            border-radius: 10px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .team h2 {
-            margin-top: 0;
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
         }
-        .team ul {
+        .skills, .interests {
             list-style-type: none;
             padding: 0;
         }
-        .team li {
+        .skills li, .interests li {
+            background-color: #f4f4f4;
             margin: 5px 0;
-        }
-        .accordion {
-            background-color: #eee;
-            color: #444;
-            cursor: pointer;
-            padding: 18px;
-            width: 100%;
-            border: none;
-            text-align: left;
-            outline: none;
-            font-size: 15px;
-            transition: 0.4s;
-        }
-        .active, .accordion:hover {
-            background-color: #ccc;
-        }
-        .panel {
-            padding: 0 18px;
-            display: none;
-            background-color: white;
-            overflow: hidden;
+            padding: 10px;
+            border: 1px solid #ddd;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>سید مخمد پویا رضوی</h1>
+    </header>
+    <section>
+        <div class="container">
+            <div class="profile-img">
+                <img src="https://i.imgur.com/Ep31Tl5.jpeg" alt="Profile Picture">
+                        </div>
+            <h2>تحصیلات</h2>
+            <p>دیپلم رشته ریاضی </p>
+                        <p>دانشجوی مقطع کارشناسی دانشگاه اصفهان </p>
+                        <p>رشته مهندسی کامپیوتر  </p>
+            <h2>کارها و پروژه‌ها</h2>
+            <p>اینجا توضیحات مربوط به کارها و پروژه‌های خود را وارد کنید...</p>
 
-<div class="header">
-    <h1>European Football Teams and Players</h1>
-</div>
+            <h2>مهارت‌ها</h2>
+            <ul class="skills">
+                <li>کاریکاتور</li>
+                <li>سابقه طولانی در عرصه گیمینگ</li>
+                <li>آشنایی با زبان های برنامه نویسی سی پلاس پلاس و پایتون</li>
+                <li>آشنایی با مجموعه آفیس <li>
+            </ul>
 
-<button class="accordion">FC Barcelona</button>
-<div class="panel">
-    <div class="team">
-        <h2>FC Barcelona</h2>
-        <ul>
-            <li>Lionel Messi</li>
-            <li>Gerard Piqué</li>
-            <li>Sergio Busquets</li>
-            <li>Frenkie de Jong</li>
-        </ul>
-    </div>
-</div>
-
-<button class="accordion">Real Madrid</button>
-<div class="panel">
-    <div class="team">
-        <h2>Real Madrid</h2>
-        <ul>
-            <li>Cristiano Ronaldo</li>
-            <li>Sergio Ramos</li>
-            <li>Luka Modrić</li>
-            <li>Toni Kroos</li>
-        </ul>
-    </div>
-</div>
-
-<button class="accordion">Manchester United</button>
-<div class="panel">
-    <div class="team">
-        <h2>Manchester United</h2>
-        <ul>
-            <li>Bruno Fernandes</li>
-            <li>Marcus Rashford</li>
-            <li>Paul Pogba</li>
-            <li>Harry Maguire</li>
-        </ul>
-    </div>
-</div>
-
-<button class="accordion">Paris Saint-Germain</button>
-<div class="panel">
-    <div class="team">
-        <h2>Paris Saint-Germain</h2>
-        <ul>
-            <li>Neymar Jr</li>
-            <li>Kylian Mbappe</li>
-            <li>Angel Di Maria</li>
-            <li>Marco Verratti</li>
-        </ul>
-    </div>
-</div>
-
-<script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-                panel.style.display = "none";
-            } else {
-                panel.style.display = "block";
-            }
-        });
-    }
-</script>
-
+            <h2>علاقه‌مندی‌ها</h2>
+            <ul class="interests">
+                <li> تحلیل فوتبال ایران و جهان</li>
+                <li>شعر و ادبیات</li>
+                <li>گیمینگ</li>
+              
+            </ul>
+        </div>
+    </section>
 </body>
 </html>
