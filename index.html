@@ -11,9 +11,10 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background: url('https://i.imgur.com/E5deWuX.jpg') no-repeat center center fixed;
+            background: url('https://i.imgur.com/F68B1Pc.jpeg') no-repeat center center fixed;
             background-size: cover;
             color: #333;
+            overflow-x: hidden;
         }
         header {
             background-color: rgba(76, 175, 80, 0.9);
@@ -27,16 +28,23 @@
             color: white;
             padding: 10px;
             text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             animation: slideIn 2s;
         }
         nav a {
             color: white;
             text-decoration: none;
             margin: 0 10px;
-            transition: color 0.3s;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: color 0.3s, background-color 0.3s;
         }
         nav a:hover {
             color: #4CAF50;
+            background-color: rgba(255, 255, 255, 0.2);
         }
         section {
             padding: 20px;
@@ -47,8 +55,8 @@
             margin: 20px auto;
             background-color: rgba(255, 255, 255, 0.9);
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
         }
         h2 {
             border-bottom: 2px solid #4CAF50;
@@ -70,7 +78,7 @@
             width: 120px;
             height: 120px;
             border-radius: 50%;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         }
         .skills, .interests {
             list-style-type: none;
@@ -81,8 +89,9 @@
             margin: 5px 0;
             padding: 10px;
             border: 1px solid #4CAF50;
-            border-radius: 5px;
+            border-radius: 10px;
             transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         .skills li:hover, .interests li:hover {
             background-color: #b2ebf2;
@@ -118,8 +127,7 @@
     <section>
         <div class="container">
             <div class="profile-img">
-                <img src="https://i.imgur.com/Ep31Tl5.jpeg" alt="Profile Picture">
-            </div>
+                <img src="https://i.imgur.com/Ep31Tl5.jpeg" alt="Profile Picture"></div>
             <h2 id="education"><i class="fas fa-graduation-cap"></i> تحصیلات</h2>
             <p>دیپلم رشته ریاضی</p>
             <p>دانشجوی مقطع کارشناسی دانشگاه اصفهان</p>
