@@ -1,182 +1,5 @@
-<!DOCTYPE html>
-<html lang="fa">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>وب سایت شخصی</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: url('https://i.imgur.com/F68B1Pc.jpeg') no-repeat center center fixed;
-            background-size: cover;
-            color: #333;
-            overflow-x: hidden;
-        }
-        header {
-            background-color: rgba(76, 175, 80, 0.9);
-            color: white;
-            padding: 20px;
-            text-align: center;
-            animation: fadeIn 2s;
-        }
-        nav {
-            background-color: rgba(51, 51, 51, 0.9);
-            color: white;
-            padding: 10px;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            animation: slideIn 2s;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-            padding: 8px 16px;
-            border-radius: 5px;
-            transition: color 0.3s, background-color 0.3s;
-        }
-        nav a:hover {
-            color: #4CAF50;
-            background-color: rgba(255, 255, 255, 0.2);
-        }
-        section {
-            padding: 20px;
-            animation: fadeIn 2s;
-        }
-        .container {
-            max-width: 900px;
-            margin: 20px auto;
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 20px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-            border-radius: 15px;
-        }
-        h2 {
-            border-bottom: 2px solid #4CAF50;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-        }
-        h2 i {
-            margin-left: 10px;
-            color: #4CAF50;
-        }
-        .profile-img {
-            text-align: center;
-            margin-bottom: 20px;
-            animation: fadeIn 2s;
-        }
-        .profile-img img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        }
-        .skills, .interests {
-            list-style-type: none;
-            padding: 0;
-        }
-        .skills li, .interests li {
-            background-color: #e0f7fa;
-            margin: 5px 0;
-            padding: 10px;
-            border: 1px solid #4CAF50;
-            border-radius: 10px;
-            transition: background-color 0.3s, transform 0.3s;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .skills li:hover, .interests li:hover {
-            background-color: #b2ebf2;
-            transform: translateY(-5px);
-        }
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        .gallery img {
-            width: 100px;
-            height: 100px;
-            object-fit: cover;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .form-container {
-            background-color: #f4f4f4;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .form-container form {
-            display: flex;
-            flex-direction: column;
-        }
-        .form-container label {
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-        .form-container input, .form-container textarea {
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .form-container button {
-            padding: 10px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        .form-container button:hover {
-            background-color: #45a049;
-        }
-        a {
-            color: #4CAF50;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            background-color: rgba(51, 51, 51, 0.9);
-            color: white;
-            padding: 20px;
-            text-align: center;
-            position: relative;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        @keyframes slideIn {
-            from { transform: translateY(-50px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>سید محمد پویا رضوی</h1>
-    </header>
-    <nav>
-        <a href="#education"><i class="fas fa-graduation-cap"></i> تحصیلات</a>
-        <a href="#projects"><i class="fas fa-briefcase"></i> کارها و پروژه‌ها</a>
-        <a href="#skills"><i class="fas fa-tools"></i> مهارت‌ها</a>
-        <a href="#interests"><i class="fas fa-heart"></i> علاقه‌مندی‌ها</a>
-        <a href="#gallery"><i class="fas fa-images"></i> گالری تصاویر</a>
-        <a href="#contact"><i class="fas fa-envelope"></i> تماس</a>
-    </nav>
+="#contact"><i class="fas fa-envelope"></i> تماس</a>
+    </div>
     <section>
         <div class="container">
             <div class="profile-img">
@@ -204,8 +27,7 @@
                 <li>شعر و ادبیات</li>
                 <li>گیمینگ</li>
             </ul>
-
-            <h2 id="gallery"><i class="fas fa-images"></i> گالری تصاویر</h2>
+<h2 id="gallery"><i class="fas fa-images"></i> گالری تصاویر</h2>
             <div class="gallery">
                 <img src="https://via.placeholder.com/100" alt="Gallery Image 1">
                 <img src="https://via.placeholder.com/100" alt="Gallery Image 2">
@@ -218,4 +40,32 @@
             <h2 id="contact"><i class="fas fa-envelope"></i> تماس</h2>
             <div class="form-container">
                 <form>
-                   [43dcd9a7-70db-4a1f-b0ae-981daa162054](https://github.com/LucaRiccio/laravel-primi-passi/tree/fb91862950a6e5bc5fb011d4a5084dbeb32dfecd/resources/views/layout/app.blade.php?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "1")[43dcd9a7-70db-4a1f-b0ae-981daa162054](https://github.com/y0cxan/y0cxan/tree/db42238938dae5048995e4f1dd18b286f5d28236/index.php?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "2")[43dcd9a7-70db-4a1f-b0ae-981daa162054](https://github.com/biboibob/BudgetAppMCP/tree/3bb17239e273dba1f6852df8c93ea6e5e452bb07/Income.php?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "3")[43dcd9a7-70db-4a1f-b0ae-981daa162054](https://github.com/tuanpham-aptech/sportequiptment/tree/dcf985d550a20e54ad6be00927c463c5fc75a020/.history/admin/includes/header_20211029103137.php?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "4")[43dcd9a7-70db-4a1f-b0ae-981daa162054](https://github.com/durgeshdks12345/mywebsite/tree/1ac71393f2f9fe030e198f98a9439d56918a83ac/README.md?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "5")
+                    <label for="name">نام:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">ایمیل:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">پیام:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">ارسال</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 سید محمد پویا رضوی. تمامی حقوق محفوظ است.</p>
+    </footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+</html>
