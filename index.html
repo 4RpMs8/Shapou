@@ -19,6 +19,20 @@
             padding: 20px;
             text-align: center;
         }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
         section {
             padding: 20px;
         }
@@ -56,26 +70,39 @@
             border: 1px solid #4CAF50;
             border-radius: 5px;
         }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>سید محمد پویا رضوی</h1>
     </header>
+    <nav>
+        <a href="#education">تحصیلات</a>
+        <a href="#projects">کارها و پروژه‌ها</a>
+        <a href="#skills">مهارت‌ها</a>
+        <a href="#interests">علاقه‌مندی‌ها</a>
+    </nav>
     <section>
         <div class="container">
             <div class="profile-img">
                 <img src="https://i.imgur.com/Ep31Tl5.jpeg" alt="Profile Picture">
             </div>
-            <h2>تحصیلات</h2>
+            <h2 id="education">تحصیلات</h2>
             <p>دیپلم رشته ریاضی</p>
             <p>دانشجوی مقطع کارشناسی دانشگاه اصفهان</p>
             <p>رشته مهندسی کامپیوتر</p>
 
-            <h2>کارها و پروژه‌ها</h2>
+            <h2 id="projects">کارها و پروژه‌ها</h2>
             <p>در حال حاضر پروژه‌ای موجود نیست.</p>
 
-            <h2>مهارت‌ها</h2>
+            <h2 id="skills">مهارت‌ها</h2>
             <ul class="skills">
                 <li>کاریکاتور</li>
                 <li>سابقه طولانی در عرصه گیمینگ</li>
@@ -83,7 +110,7 @@
                 <li>آشنایی با مجموعه آفیس</li>
             </ul>
 
-            <h2>علاقه‌مندی‌ها</h2>
+            <h2 id="interests">علاقه‌مندی‌ها</h2>
             <ul class="interests">
                 <li>تحلیل فوتبال ایران و جهان</li>
                 <li>شعر و ادبیات</li>
