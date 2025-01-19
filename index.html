@@ -10,14 +10,18 @@
     <link rel="stylesheet" href="./scss/responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <script src="./bootstrap/js/jquery.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
     <script src="./bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <link rel="icon" href="images/favicon.png">
-    <script src="https://kit.fontawesome.com/4b9ba14b0f.js" crossorigin="anonymous"></script>
-    <style>
+     <script src="https://kit.fontawesome.com/4b9ba14b0f.js" crossorigin="anonymous"></script>
+     <style>
+     
 .mainbox {
   /* background-color: #95c2de; */
   margin: auto;
@@ -30,7 +34,7 @@
     color: #ffffff;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 11rem;
-    position: absolute;
+    position:absolute;
     left: 20%;
     top: 8%;
     -webkit-text-fill-color: transparent;
@@ -46,16 +50,16 @@
   top: 15%;
   color: #ffffff;
   -webkit-text-fill-color: transparent;
-  background: -webkit-gradient(linear, left top, right top, from(#ef4136), to(#fbb040));
-  background: linear-gradient(to right, #ef4136, #fbb040);
-  -webkit-background-clip: text;
+    background: -webkit-gradient(linear, left top, right top, from(#ef4136), to(#fbb040));
+    background: linear-gradient(to right, #ef4136, #fbb040);
+    -webkit-background-clip: text;
 }
 
  .err2 {
     color: #ffffff;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 11rem;
-    position: absolute;
+    position:absolute;
     left: 68%;
     top: 8%;
     -webkit-text-fill-color: transparent;
@@ -74,17 +78,17 @@
     line-height: 1.55;
     letter-spacing: normal;
     color: #383838;
-    position: absolute;
+    position:absolute;
     left: 16%;
     top: 45%;
     width: 75%;
   }
 
-  .msg p {
-      text-align: center;
+  .msg p{
+      text-align:center;
   }
-
   @media screen and (min-width: 320px) and (max-width: 767px) {
+
 .mainbox {
   height: 100%;
   width: 100%;
@@ -95,35 +99,39 @@
   font-size: 9rem;
   left: 8%;
   top: 8%;
+
 }
 
 .far {
   font-size: 5.5rem;
   left: 35%;
   top: 17%;
+
 }
 
 .err2 {
   font-size: 9rem;
   left: 68%;
   top: 8%;
+
 }
 
 .msg {
   text-align: center;
   font-size: 1rem;
+
 }
 }
 </style>
 </head>
- <body onload="AOS.init();">
+<body onload="AOS.init();">
   <div class="mainbox" data-aos="fade-up">
     <div class="err" data-aos="fade-down">4</div>
     <i class="far fa-question-circle fa-spin" data-aos="zoom-in"></i>
     <div class="err2" data-aos="fade-down">4</div>
     <div class="msg" data-aos="fade-up">Page not found<p>Let's go <a href="index.php">home</a> and try from there.</p></div>
   </div>
-  
+
   <!-- Navigation Menu -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">Website</a>
@@ -148,59 +156,61 @@
       </div>
   </nav>
 
-  <!-- Additional Content Pages -->
-  <div class="container mt-5">
-    <section id="about" data-aos="fade-up">
-      <h2>About Me</h2>
-      <p>سید محمد پویا رضوی، دانشجوی مقطع کارشناسی دانشگاه اصفهان در رشته مهندسی کامپیوتر.</p>
-      <h3>تحصیلات:</h3>
-      <p>دیپلم رشته ریاضی</p>
-      <p>دانشجوی مقطع کارشناسی دانشگاه اصفهان</p>
-      <p>رشته مهندسی کامپیوتر</p>
-    </section>
+  <!-- About Section -->
+  <div class="container mt-5" id="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>سید محمد پویا رضوی، دانشجوی مقطع کارشناسی دانشگاه اصفهان در رشته مهندسی کامپیوتر.</p>
+    <h3>تحصیلات:</h3>
+    <p>دیپلم رشته ریاضی</p>
+    <p>دانشجوی مقطع کارشناسی دانشگاه اصفهان</p>
+    <p>رشته مهندسی کامپیوتر</p>
+  </div>
 
-    <section id="projects" data-aos="fade-up">
-      <h2>Projects</h2>
-      <p>در حال حاضر پروژه‌ای موجود نیست.</p>
-    </section>
+  <!-- Projects Section -->
+  <div class="container mt-5" id="projects" data-aos="fade-up">
+    <h2>Projects</h2>
+    <p>در حال حاضر پروژه‌ای موجود نیست.</p>
+  </div>
 
-    <section id="skills" data-aos="fade-up">
-      <h2>Skills</h2>
-      <ul>
-        <li>کاریکاتور</li>
-        <li>سابقه طولانی در عرصه گیمینگ</li>
-        <li>آشنایی با زبان‌های برنامه‌نویسی سی پلاس پلاس و پایتون</li>
-        <li>آشنایی با مجموعه آفیس</li>
-      </ul>
-    </section>
+  <!-- Skills Section -->
+  <div class="container mt-5" id="skills" data-aos="fade-up">
+    <h2>Skills</h2>
+    <ul>
+      <li>کاریکاتور</li>
+      <li>سابقه طولانی در عرصه گیمینگ</li>
+      <li>آشنایی با زبان‌های برنامه‌نویسی سی پلاس پلاس و پایتون</li>
+      <li>آشنایی با مجموعه آفیس</li>
+    </ul>
+  </div>
 
-    <section id="interests" data-aos="fade-up">
-      <h2>Interests</h2>
-      <ul>
-        <li>تحلیل فوتبال ایران و جهان</li>
-        <li>شعر و ادبیات</li>
-        <li>گیمینگ</li>
-      </ul>
-    </section>
+  <!-- Interests Section -->
+  <div class="container mt-5" id="interests" data-aos="fade-up">
+    <h2>Interests</h2>
+    <ul>
+      <li>تحلیل فوتبال ایران و جهان</li>
+      <li>شعر و ادبیات</li>
+      <li>گیمینگ</li>
+    </ul>
+  </div>
 
-    <section id="contact" data-aos="fade-up">
-      <h2>Contact</h2>
-      <form>
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" class="form-control" id="name" placeholder="Enter your name">
-        </div>
-        <div class="form-group">
-          <label for="email">Email address</label>
-          <input type="email" class="form-control" id="email" placeholder="Enter your email">
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-    </section>
+  <!-- Contact Section -->
+  <div class="container mt-5" id="contact" data-aos="fade-up">
+    <h2>Contact</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
   </div>
 
   <!-- Gallery Section -->
@@ -215,7 +225,7 @@
       <img src="https://via.placeholder.com/100" alt="Gallery Image 6">
     </div>
   </div>
- <footer class="bg-light text-center text-lg-start mt-5">
+<footer class="bg-light text-center text-lg-start mt-5">
     <div class="text-center p-3">
       &copy; 2025 سید محمد پویا رضوی. تمامی حقوق محفوظ است.
     </div>
@@ -231,6 +241,7 @@
     }
   </script>
 </body>
-</html>    
+</html>
+    
 
 
