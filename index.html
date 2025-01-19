@@ -6,6 +6,7 @@
     <title>وب سایت شخصی</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -115,25 +116,31 @@
         }
     </style>
 </head>
- <body>
+<body>
     <header>
         <h1>سید محمد پویا رضوی</h1>
         <span class="nav-toggle" onclick="openNav()">&#9776;</span>
     </header>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#education"><i class="fas fa-graduation-cap"></i> تحصیلات</a>
-        <a href="#projects"><i class="fas fa-briefcase"></i> کارها و پروژه‌ها</a>
-        <a href="#skills"><i class="fas fa-tools"></i> مهارت‌ها</a>
-        <a href="#interests"><i class="fas fa-heart"></i> علاقه‌مندی‌ها</a>
-        <a href="#gallery"><i class="fas fa-images"></i> گالری تصاویر</a>
-        <a href="#contact"><i class="fas fa-envelope"></i> تماس</a>
+        <a href="education.html"><i class="fas fa-graduation-cap"></i> تحصیلات</a>
+        <a href="projects.html"><i class="fas fa-briefcase"></i> کارها و پروژه‌ها</a>
+        <a href="skills.html"><i class="fas fa-tools"></i> مهارت‌ها</a>
+        <a href="interests.html"><i class="fas fa-heart"></i> علاقه‌مندی‌ها</a>
+        <a href="gallery.html"><i class="fas fa-images"></i> گالری تصاویر</a>
+        <a href="contact.html"><i class="fas fa-envelope"></i> تماس</a>
     </div>
     <section>
         <div class="container">
             <div class="profile-img">
                 <img src="https://i.imgur.com/Ep31Tl5.jpeg" alt="Profile Picture">
             </div>
+            <h2><i class="fas fa-info-circle"></i> درباره من</h2>
+            <p>سید محمد پویا رضوی، دانشجوی مقطع کارشناسی دانشگاه اصفهان در رشته مهندسی کامپیوتر.</p>
+        </div>
+    </section>
+ <section>
+        <div class="container">
             <h2 id="education"><i class="fas fa-graduation-cap"></i> تحصیلات</h2>
             <p>دیپلم رشته ریاضی</p>
             <p>دانشجوی مقطع کارشناسی دانشگاه اصفهان</p>
@@ -184,7 +191,7 @@
             </div>
         </div>
     </section>
- <footer>
+  <footer>
         <p>&copy; 2025 سید محمد پویا رضوی. تمامی حقوق محفوظ است.</p>
     </footer>
 
@@ -197,8 +204,13 @@
             document.getElementById("mySidenav").style.width = "0";
         }
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
-</html>    
+</html>  
+    
 
 
 
