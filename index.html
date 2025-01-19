@@ -1,163 +1,160 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>وب سایت شخصی</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Gain</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="./scss/style.css">
+    <link rel="stylesheet" href="./scss/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <script src="./bootstrap/js/jquery.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="icon" href="images/favicon.png">
+    <script src="https://kit.fontawesome.com/4b9ba14b0f.js" crossorigin="anonymous"></script>
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: url('https://i.imgur.com/F68B1Pc.jpeg') no-repeat center center fixed;
-            background-size: cover;
-            color: #333;
-            overflow-x: hidden;
-        }
-        header {
-            background-color: rgba(76, 175, 80, 0.9);
-            color: white;
-            padding: 20px;
-            text-align: center;
-            animation: fadeIn 2s;
-        }
-        .nav-toggle {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            font-size: 24px;
-            cursor: pointer;
-            z-index: 2000;
-            color: white;
-        }
-        .sidenav {
-            height: 100%;
-            width: 0;
-            position: fixed;
-            z-index: 1000;
-            top: 0;
-            left: 0;
-            background-color: rgba(51, 51, 51, 0.9);
-            overflow-x: hidden;
-            transition: 0.5s;
-            padding-top: 60px;
-        }
-        .sidenav a {
-            padding: 8px 8px 8px 32px;
-            text-decoration: none;
-            font-size: 25px;
-            color: white;
-            display: block;
-            transition: 0.3s;
-        }
-        .sidenav a:hover {
-            color: #4CAF50;
-        }
-        .sidenav .closebtn {
-            position: absolute;
-            top: 0;
-            right: 25px;
-            font-size: 36px;
-            margin-left: 50px;
-        }
-        section {
-            padding: 20px;
-            animation: fadeIn 2s;
-        }
-        .container {
-            max-width: 900px;
-            margin: 20px auto;
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 20px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-            border-radius: 15px;
-        }
-        h2 {
-            border-bottom: 2px solid #4CAF50;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-        }
-        h2 i {
-            margin-left: 10px;
-            color: #4CAF50;
-        }
-        .profile-img {
-            text-align: center;
-            margin-bottom: 20px;
-            animation: fadeIn 2s;
-        }
-        .profile-img img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        }
-        .skills, .interests {
-            list-style-type: none;
-            padding: 0;
-        }
-        .skills li, .interests li {
-            background-color: #e0f7fa;
-            margin: 5px 0;
-            padding: 10px;
-            border: 1px solid #4CAF50;
-            border-radius: 10px;
-            transition: background-color 0.3s, transform 0.3s;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .skills li:hover, .interests li:hover {
-            background-color: #b2ebf2;
-            transform: translateY(-5px);
-        }
-    </style>
+.mainbox {
+  /* background-color: #95c2de; */
+  margin: auto;
+  height: 600px;
+  width: 600px;
+  position: relative;
+}
+
+  .err {
+    color: #ffffff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 11rem;
+    position: absolute;
+    left: 20%;
+    top: 8%;
+    -webkit-text-fill-color: transparent;
+    background: -webkit-gradient(linear, left top, right top, from(#ef4136), to(#fbb040));
+    background: linear-gradient(to right, #ef4136, #fbb040);
+    -webkit-background-clip: text;
+  }
+
+.far {
+  position: absolute;
+  font-size: 8.5rem;
+  left: 42%;
+  top: 15%;
+  color: #ffffff;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-gradient(linear, left top, right top, from(#ef4136), to(#fbb040));
+  background: linear-gradient(to right, #ef4136, #fbb040);
+  -webkit-background-clip: text;
+}
+
+ .err2 {
+    color: #ffffff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 11rem;
+    position: absolute;
+    left: 68%;
+    top: 8%;
+    -webkit-text-fill-color: transparent;
+    background: -webkit-gradient(linear, left top, right top, from(#ef4136), to(#fbb040));
+    background: linear-gradient(to right, #ef4136, #fbb040);
+    -webkit-background-clip: text;
+  }
+
+.msg {
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: Roboto;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.55;
+    letter-spacing: normal;
+    color: #383838;
+    position: absolute;
+    left: 16%;
+    top: 45%;
+    width: 75%;
+  }
+
+  .msg p {
+      text-align: center;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+.mainbox {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.err {
+  font-size: 9rem;
+  left: 8%;
+  top: 8%;
+}
+
+.far {
+  font-size: 5.5rem;
+  left: 35%;
+  top: 17%;
+}
+
+.err2 {
+  font-size: 9rem;
+  left: 68%;
+  top: 8%;
+}
+
+.msg {
+  text-align: center;
+  font-size: 1rem;
+}
+}
+</style>
 </head>
-<body>
-    <header>
-        <h1>سید محمد پویا رضوی</h1>
-        <span class="nav-toggle" onclick="openNav()">&#9776;</span>
-    </header>
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#education"><i class="fas fa-graduation-cap"></i> تحصیلات</a>
-        <a href="#projects"><i class="fas fa-briefcase"></i> کارها و پروژه‌ها</a>
-        <a href="#skills"><i class="fas fa-tools"></i> مهارت‌ها</a>
-        <a href="#interests"><i class="fas fa-heart"></i> علاقه‌مندی‌ها</a>
-        <a href="#gallery"><i class="fas fa-images"></i> گالری تصاویر</a>
-        <a href="#contact"><i class="fas fa-envelope"></i> تماس</a>
-    </div>
-    <section>
+    <body onload="AOS.init();">
+  <div class="mainbox" data-aos="fade-up">
+    <div class="err" data-aos="fade-down">4</div>
+    <i class="far fa-question-circle fa-spin" data-aos="zoom-in"></i>
+    <div class="err2" data-aos="fade-down">4</div>
+    <div class="msg" data-aos="fade-up">Page not found<p>Let's go <a href="index.php">home</a> and try from there.</p></div>
+  </div>
+
+  <!-- اضافه کردن اطلاعات شخصی و تحصیلات -->
+  <section>
         <div class="container">
             <div class="profile-img">
                 <img src="https://i.imgur.com/Ep31Tl5.jpeg" alt="Profile Picture">
             </div>
-            <h2 id="education"><i class="fas fa-graduation-cap"></i> تحصیلات</h2>
+            <h2 id="education" data-aos="fade-right"><i class="fas fa-graduation-cap"></i> تحصیلات</h2>
             <p>دیپلم رشته ریاضی</p>
             <p>دانشجوی مقطع کارشناسی دانشگاه اصفهان</p>
             <p>رشته مهندسی کامپیوتر</p>
 
-            <h2 id="projects"><i class="fas fa-briefcase"></i> کارها و پروژه‌ها</h2>
+            <h2 id="projects" data-aos="fade-left"><i class="fas fa-briefcase"></i> کارها و پروژه‌ها</h2>
             <p>در حال حاضر پروژه‌ای موجود نیست.</p>
 
-            <h2 id="skills"><i class="fas fa-tools"></i> مهارت‌ها</h2>
+            <h2 id="skills" data-aos="fade-right"><i class="fas fa-tools"></i> مهارت‌ها</h2>
             <ul class="skills">
-                <li>کاریکاتور</li>
-                <li>سابقه طولانی در عرصه گیمینگ</li>
-                <li>آشنایی با زبان‌های برنامه‌نویسی سی پلاس پلاس و پایتون</li>
-                <li>آشنایی با مجموعه آفیس</li>
+                <li data-aos="flip-left">کاریکاتور</li>
+                <li data-aos="flip-right">سابقه طولانی در عرصه گیمینگ</li>
+                <li data-aos="flip-left">آشنایی با زبان‌های برنامه‌نویسی سی پلاس پلاس و پایتون</li>
+                <li data-aos="flip-right">آشنایی با مجموعه آفیس</li>
             </ul>
 
-            <h2 id="interests"><i class="fas fa-heart"></i> علاقه‌مندی‌ها</h2>
+            <h2 id="interests" data-aos="fade-left"><i class="fas fa-heart"></i> علاقه‌مندی‌ها</h2>
             <ul class="interests">
-                <li>تحلیل فوتبال ایران و جهان</li>
-                <li>شعر و ادبیات</li>
-                <li>گیمینگ</li>
+                <li data-aos="zoom-in">تحلیل فوتبال ایران و جهان</li>
+                <li data-aos="zoom-in">شعر و ادبیات</li>
+                <li data-aos="zoom-in">گیمینگ</li>
             </ul>
-<h2 id="gallery"><i class="fas fa-images"></i> گالری تصاویر</h2>
-            <div class="gallery">
+
+            <h2 id="gallery" data-aos="fade-up"><i class="fas fa-images"></i> گالری تصاویر</h2>
+            <div class="gallery" style="height: 400px; overflow-y: auto;">
                 <img src="https://via.placeholder.com/100" alt="Gallery Image 1">
                 <img src="https://via.placeholder.com/100" alt="Gallery Image 2">
                 <img src="https://via.placeholder.com/100" alt="Gallery Image 3">
@@ -166,8 +163,8 @@
                 <img src="https://via.placeholder.com/100" alt="Gallery Image 6">
             </div>
 
-            <h2 id="contact"><i class="fas fa-envelope"></i> تماس</h2>
-            <div class="form-container">
+            <h2 id="contact" data-aos="fade-up"><i class="fas fa-envelope"></i> تماس</h2>
+            <div class="form-container" style="height: 300px; overflow-y: auto;">
                 <form>
                     <label for="name">نام:</label>
                     <input type="text" id="name" name="name" required>
@@ -182,8 +179,9 @@
                 </form>
             </div>
         </div>
-    </section>
-    <footer>
+  </section>
+        
+<footer>
         <p>&copy; 2025 سید محمد پویا رضوی. تمامی حقوق محفوظ است.</p>
     </footer>
 
