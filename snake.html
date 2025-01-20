@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بازی مار</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        #gameCanvas {
+            border: 2px solid #333;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        #score {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="score">امتیاز: 0</div>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+    <script>
+        // جاوااسکریپت برای بازی مار
+        const canvas = document.getElementById("gameCanvas");
+        const ctx = canvas.getContext("2d");
+        const scoreDisplay = document.getElementById("score");
+
+        const unit = 20;
+        let snake = [{ x: unit * 2, y: unit * 2 }];
+        let direction = "right";
+        let food = { x: unit * 5, y: unit * 5 };
+        let score = 0;
+
+        document.addEventListener("keydown", changeDirection);
+
+        function changeDirection(event) {
+            const keyPressed = event.keyCode;
+            if (keyPressed === 37 && direction !== "right") {
+                direction = "left";
+            } else if (keyPressed === 38 && direction !== "down") {
+                direction = "up";
+            } else if (keyPressed === 39 && direction !== "left") {
+                direction = "right";
+            } else if (keyPressed === 40 && direction !== "up") {
+                direction = "down";
+            }
+        }
+
+        function drawSnake() {
+            ctx.fillStyle = "#4CAF50";
+            snake.forEach(segment => {
+                ctx.fillRect(segment.x, segment.y, unit, unit);
+                ctx.strokeRect(segment.x, segment.y, unit, unit);
+            });
+        }
+
+        function moveSnake() {
+            const head = { x: snake[0].x, y: snake[0].y };
+            if (direction === "left") head.x -= unit;
+            else if (direction === "up") head.y -= unit;
+            else if (direction === "right") head.x += unit;
+            else if (direction === "down") head.y += unit;
+            snake.unshift(head);
+
+            if (head.x === food.x && head.y === food.y) {
+                score++;
+                scoreDisplay.textContent = "امتیاز: " + score;
+                createFood();
+            } else {
+                snake.pop();
+            }
+        }
+
+        function createFood() {
+            food.x = Math.floor(Math.random() * canvas.width / unit) * unit;
+            food.y = Math.floor(Math.random() * canvas.height / unit) * unit;
+            snake.forEach(segment => {
+                if (segment.x === food.x && segment.y === food.y) {
+                    createFood();
+                }
+            });
+        }
+
+        function checkCollision() {
+            const head = snake[0];
+            if (head.x < 0 || head.x >= canvas.width || head.y < 0 || head.y >= canvas.height) {
+                return true;
+            }
+            for (let i = 1; i < snake.length; i++) {
+                if (snake[i].x === head.x && snake[i].y === head.y) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        function gameLoop() {
+            if (checkCollision()) {
+                alert("Game Over! امتیاز شما: " + score);
+                snake = [{ x: unit * 2, y: unit * 2 }];
+                direction = "right";
+                score = 0;
+                scoreDisplay.textContent = "امتیاز: " + score;
+                createFood();
+            } else {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                drawSnake();
+                moveSnake();
+                ctx.fillStyle = "#FF5722";
+                ctx.fillRect(food.x, food.y, unit, unit);
+            }
+        }
+
+        createFood();
+        setInterval(gameLoop, 100);
+    </script>
+</body>
+</html>
