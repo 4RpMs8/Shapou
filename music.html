@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آهنگ‌ها</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://i.imgur.com/oNZd8qM.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: rgba(76, 175, 80, 0.9);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 2s;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+        }
+        ul.songs {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul.songs li {
+            background-color: #ffe0b2;
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #FF5722;
+            border-radius: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        ul.songs li:hover {
+            background-color: #FF5722;
+            color: white;
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>آهنگ‌ها</h1>
+    </header>
+    <section>
+        <div class="container" data-aos="fade-up">
+            <h2><i class="fas fa-music"></i> مجموعه آهنگ‌ها</h2>
+            <ul class="songs">
+                <li>آهنگ ۱</li>
+                <li>آهنگ ۲</li>
+                <li>آهنگ ۳</li>
+                <li>آهنگ ۴</li>
+                <li>آهنگ ۵</li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 تمامی حقوق محفوظ است.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
