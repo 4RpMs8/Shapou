@@ -50,6 +50,9 @@
             color: white;
             transform: scale(1.02);
         }
+        .audio-player {
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -60,11 +63,33 @@
         <div class="container" data-aos="fade-up">
             <h2><i class="fas fa-music"></i> مجموعه آهنگ‌ها</h2>
             <ul class="songs">
-                <li>آهنگ ۱</li>
-                <li>آهنگ ۲</li>
-                <li>آهنگ ۳</li>
-                <li>آهنگ ۴</li>
-                <li>آهنگ ۵</li>
+                <li>
+                    آهنگ ۱
+                    <div class="audio-player">
+                        <audio controls>
+                            <source src="قهرمان-file1.mp3" type="audio/mpeg">
+                            مرورگر شما از تگ <code>audio</code> پشتیبانی نمی‌کند.
+                        </audio>
+                    </div>
+                </li>
+                <li>
+                    آهنگ ۲
+                    <div class="audio-player">
+                        <audio controls>
+                            <source src="The best.mp3" type="audio/mpeg">
+                            مرورگر شما از تگ <code>audio</code> پشتیبانی نمی‌کند.
+                        </audio>
+                    </div>
+                </li>
+                <li>
+                    آهنگ ۳
+                    <div class="audio-player">
+                        <audio controls>
+                            <source src="Aato.mp3" type="audio/mpeg">
+                            مرورگر شما از تگ <code>audio</code> پشتیبانی نمی‌کند.
+                        </audio>
+                    </div>
+                </li>
             </ul>
         </div>
     </section>
